@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Do you love me?</title>
+    <style>
+      input[value='no'] {
+        position: relative;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="C:\Users\omere\OneDrive\Belgeler\omererkan.jfif" alt="Omer Erkan Photo">
+    <h1>Do you love me?</h1>
+    <form>
+      <input type="radio" name="love" value="yes" checked onclick="return false"> Yes<br>
+      <input type="radio" name="love" value="no" onclick="return false" id="no-button"> No<br>
+    </form> 
+    <div id="no-submit">
+      <form action="lovesme.html">
+        <input type="submit" value="Submit">
+      </form>
+    </form> 
+     <script>
+      document.getElementById("no-button").addEventListener("mouseover", function(event) {
+        this.style.zIndex = -1;
+      });
+      document.getElementById("no-button").addEventListener("mouseout", function(event) {
+        this.style.zIndex = 0;
+      });
+     </script>
+  </body>
+</html>
+
